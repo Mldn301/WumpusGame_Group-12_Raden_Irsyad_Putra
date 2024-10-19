@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wumpus Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Wumpus Game</h1>
+    <div id="game-container">
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>Welcome to the Wumpus Game!</p>
+            <p>Your goal is to find the gold and avoid the Wumpus.</p>
+            <p>You win this game if you hit the Wumpus or get the gold</p>
+            <p>Use the grid to move your player:</p>
+            <ul>
+                <li>Click on a square to move to that position.</li>
+                <li>The Wumpus is always trying to get closer to you!</li>
+                <li>You can't move to the grey square because it's blocked by an obstacle</li>
+            </ul>
+            <p>To shoot your arrow:</p>
+            <ul>
+                <li>Click the arrow buttons to shoot in that direction.</li>
+                <li>If you hit the Wumpus, you win!</li>
+                <li>If you miss, you'll use up your arrow.</li>
+            </ul>
+            <p>Good luck!</p>
+        </div>
+
+        <div id="game-board-container">
+            <div id="game-board"></div>
+            <div id="status"></div>
+
+            <div id="controls">
+                <button id="reset-btn">Reset Game</button>
+                <h2>Shoot Arrow</h2>
+                <button id="shoot-up">↑</button>
+                <button id="shoot-down">↓</button>
+                <button id="shoot-left">←</button>
+                <button id="shoot-right">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
